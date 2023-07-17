@@ -25,6 +25,7 @@ export default defineNuxtConfig({
 		plugins: {
 			tailwindcss: {},
 			autoprefixer: {},
+			cssnano: false,
 		},
 	},
 });
