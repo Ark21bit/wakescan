@@ -3,7 +3,6 @@ export default defineNuxtConfig({
 	devtools: { enabled: true },
 	components: ["~/components/atoms", "~/components/reviews", "~/components"],
 	modules: [
-		"@nuxtjs/tailwindcss",
 		"nuxt-icons",
 		"@formkit/nuxt",
 		"@vueuse/nuxt",
