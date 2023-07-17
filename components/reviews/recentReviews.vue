@@ -33,6 +33,6 @@ const options = ref({
    slidesPerView: 1,
    rewind: true,
    simulateTouch: props.simulateTouch,
-   mousewheel: { ForceToAxis: true },
+   mousewheel: { ReleaseOnEdges: true },
 })
 </script>
