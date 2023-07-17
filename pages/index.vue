@@ -1,7 +1,7 @@
 <template>
    <new-overview class="mt-10 lg:mt-25" />
    <recent-reviews class="mt-10 lg:mt-25" />
-   <recent-reviews class="mt-10 lg:mt-25" />
+   <recent-reviews class="mt-10 lg:mt-25" :simulate-touch="true"/>
    <base-container class="mt-10 lg:mt-25" title="Ближайшие соревнования" linkTitle="Все соревнования" link="/">
       <template #header-icon>
          <nuxt-icon name="cup" class="text-2xl mr-4 text-[#FFAF51]" />
