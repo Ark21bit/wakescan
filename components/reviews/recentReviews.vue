@@ -32,6 +32,7 @@ const options = ref({
    breakpoints: { 640: { "slidesPerView": 2 } },
    slidesPerView: 1,
    rewind: true,
-   simulateTouch: props.simulateTouch
+   simulateTouch: props.simulateTouch,
+   mousewheel: true,   
 })
 </script>
