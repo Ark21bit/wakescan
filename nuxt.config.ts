@@ -1,5 +1,6 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
+	css: ["~/assets/css/tailwind.css"],
 	devtools: { enabled: true },
 	components: ["~/components/atoms", "~/components/reviews", "~/components"],
 	modules: [
@@ -24,15 +25,6 @@ export default defineNuxtConfig({
 		plugins: {
 			tailwindcss: {},
 			autoprefixer: {},
-			cssnano:
-				process.env.NODE_ENV === "production"
-					? {
-							preset: [
-								"default",
-								{ discardComments: { removeAll: true } },
-							],
-					  }
-					: false, // disable cssnano when not in production
 		},
 	},
 });

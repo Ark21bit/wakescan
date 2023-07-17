@@ -12,11 +12,13 @@
     "@formkit/nuxt": "^0.17.4",
     "@nuxt/devtools": "latest",
     "@nuxtjs/google-fonts": "^3.0.1",
-    "@nuxtjs/tailwindcss": "^6.8.0",
     "@types/node": "^18.16.19",
     "@vueuse/nuxt": "^10.2.1",
+    "autoprefixer": "^10.4.14",
     "nuxt": "^3.6.3",
-    "nuxt-icons": "^3.2.1"
+    "nuxt-icons": "^3.2.1",
+    "postcss": "^8.4.26",
+    "tailwindcss": "^3.3.3"
   },
   "dependencies": {
     "@formkit/addons": "^0.17.4",

@@ -1,9 +1,17 @@
 import type { Config } from "tailwindcss";
-const FormKitVariants = require('@formkit/themes/tailwindcss')
-const formKitTailwind = require('@formkit/themes/tailwindcss')
+const FormKitVariants = require("@formkit/themes/tailwindcss");
+const formKitTailwind = require("@formkit/themes/tailwindcss");
 
 export default <Partial<Config>>{
-	content: ["./formkit-theme.js"],
+	content: [
+		"./components/**/*.{js,vue,ts}",
+		"./layouts/**/*.vue",
+		"./pages/**/*.vue",
+		"./plugins/**/*.{js,ts}",
+		"./nuxt.config.{js,ts}",
+		"./app.vue",
+		"./formkit-theme.js",
+	],
 	plugins: [formKitTailwind, FormKitVariants],
 	theme: {
 		extend: {
