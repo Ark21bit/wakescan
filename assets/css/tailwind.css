@@ -1,0 +1,58 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+	#__nuxt {
+		@apply flex text-[#4B4B4B] leading-[normal] min-h-screen flex-col justify-start whitespace-pre-line font-Rubik;
+	}
+
+	:root {
+		/* макимальная ширина контента */
+		@apply /*
+        Растояние от границы брузера по бокам */ [--widthContent:1280px]
+        [--widthContentMargin:30px] lg:[--widthContentMargin:40px];
+	}
+
+	/* Настройка кастомных контейнеров */
+	/* Применение системы гридов для расположения контента в ячейку main или full или в любую другую ячейку между именованными линиями grid*/
+
+	.grid-container {
+		grid-template-columns:
+			[full-start] minmax(var(--widthContentMargin), 1fr)
+			[main-start] minmax(0, var(--widthContent))
+			[main-end] minmax(var(--widthContentMargin), 1fr) [full-end];
+		@apply grid;
+	}
+
+	.grid-container > * {
+		@apply col-[main];
+	}
+
+	.wrapper {
+		@apply mx-auto w-[calc(100%-var(--widthContentMargin)*2)] max-w-[var(--widthContent)];
+	}
+
+	.container {
+		@apply max-w-[var(--widthContent)];
+	}
+}
+
+.nuxt-icon svg {
+	margin-bottom: 0 !important;
+}
+
+.nuxt-icon {
+	display: flex !important;
+	flex-shrink: 0;
+}
+
+.fade-enter-active,
+.fade-leave-active {
+	@apply transition-opacity duration-500 ease-linear;
+}
+
+.fade-enter-from,
+.fade-leave-to {
+	@apply opacity-0;
+}

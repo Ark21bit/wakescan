@@ -1,0 +1,28 @@
+{
+  "name": "nuxt-app",
+  "private": true,
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare"
+  },
+  "devDependencies": {
+    "@formkit/nuxt": "^0.17.4",
+    "@nuxt/devtools": "latest",
+    "@nuxtjs/google-fonts": "^3.0.1",
+    "@nuxtjs/tailwindcss": "^6.8.0",
+    "@types/node": "^18.16.19",
+    "@vueuse/nuxt": "^10.2.1",
+    "nuxt": "^3.6.2",
+    "nuxt-icons": "^3.2.1"
+  },
+  "dependencies": {
+    "@formkit/addons": "^0.17.4",
+    "@formkit/i18n": "^0.17.4",
+    "@formkit/themes": "^0.17.4",
+    "@vueuse/components": "^10.2.1",
+    "swiper": "^10.0.4"
+  }
+}

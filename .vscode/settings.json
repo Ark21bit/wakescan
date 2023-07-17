@@ -1,0 +1,10 @@
+{
+    "editor.tabSize": 3,
+    "tailwindCSS.classAttributes": [
+        "class",
+        "className",
+        "ngClass",
+        "formClass",
+        "form-class"
+    ]
+}
