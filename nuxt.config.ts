@@ -2,7 +2,12 @@
 export default defineNuxtConfig({
 	css: ["~/assets/css/tailwind.css"],
 	devtools: { enabled: true },
-	components: ["~/components/atoms", "~/components/reviews", "~/components"],
+	components: [
+		"~/components/atoms",
+		"~/components/atoms/tabs",
+		"~/components/reviews",
+		"~/components",
+	],
 	modules: [
 		"nuxt-icons",
 		"@formkit/nuxt",

@@ -22,17 +22,11 @@
 </template>
 
 <script setup>
-const props = defineProps({
-   simulateTouch: { type: Boolean, default: false }
-})
-
 const options = ref({
    injectStyles: [".swiper { display:flex }"],
    spaceBetween: "20",
    breakpoints: { 640: { "slidesPerView": 2 } },
    slidesPerView: 1,
    rewind: true,
-   simulateTouch: props.simulateTouch,
-   mousewheel: { ReleaseOnEdges: true },
 })
 </script>
